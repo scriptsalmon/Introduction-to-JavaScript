@@ -226,11 +226,11 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm){
+  return cm / 30.48;
 }
 
-
+console.log('task5b', feet(12));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -243,9 +243,8 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(number){
-      for(let i = number; i > 0; i--){
-        return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down, 
-        pass it around, ${i - i} bottles of soda on the wall`;
+      for(let i = number; i > 0; i-- ){
+        return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`;
       }
 }
 
