@@ -123,10 +123,30 @@ NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.449
 */  
 
 function hungryDog(pounds, age){
-
+  if (age >= 1 && pounds <= 5){
+    return pounds * 0.05;
+  }
+  else if (age >= 1 && pounds >= 6 || pounds <= 10){
+    return pounds * 0.04;
+  }
+  else if (age >= 1 && pounds >= 11 || pounds <= 15){
+    return pounds * 0.03;
+  }
+  else if (age >= 1 && pounds > 15){
+    return pounds * 0.02;
+  }
+  else if (age > 0.16 && age <= 0.33){
+    return pounds / 10;
+  }
+  else if (age > 0.33 && age <= 0.5833){
+    return pounds * 0.02;
+  }
+  else if (age > 0.58 && age <= 1){
+    return pounds * 0.04;
+  }
 }
 
-
+console.log('task3', hungryDog(4, 2));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -162,7 +182,7 @@ else if (computer > 0.67){
 
 function game(user, computer){
   if (user === computer){
-    return 'its a tie';
+    return `it's a tie`;
   }
   else if (user === 'rock' && computer === 'scissors'){
     return 'you win!';
