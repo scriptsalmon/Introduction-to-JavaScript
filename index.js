@@ -19,6 +19,12 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = 18;
+
+if(votingAge >= 18){
+  console.log(true);
+}
+console.log('task 1a');
 
 /*
 Task 1b - Values
@@ -31,7 +37,13 @@ Do the following:
    HINT: no function required
 */
 
+let varOne = 1;
+let varTwo = 2;
+if (varOne > varTwo){
+  console.log(varOne + varTwo); 
+}
 
+console.log('task 1b');
 
 
 
@@ -46,7 +58,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+let stringVar = "1999";
+Number(stringVar);
+console.log(stringVar);
 
 
 /*
@@ -74,11 +88,12 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+  let humanYears = 0;
+  return humanYears = age * 7;
 }
 
-
+console.log('task2', dogYears(3));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -107,8 +122,8 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(pounds, age){
+
 }
 
 
@@ -133,6 +148,7 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+
 let computer = Math.random();
 if (computer <= 0.34){
   computer = 'rock';
